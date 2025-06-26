@@ -1,3 +1,5 @@
+# an example with IN 
+
 shopping_list = input("Is milk on the list: ").lower()
 
 print(shopping_list)
@@ -7,7 +9,12 @@ if "milk" in shopping_list:
 else:
     print("Milk is missing")
 
-movie_titles = ["rocky", "warstars", "batman"]
+# an example with NOT IN
+
+movie_titles = ["Rocky", "WarstarS", "baTMan"]
+
+lowercase_movie_titles = [item.lower() for item in movie_titles if isinstance(item, str)]
+print(lowercase_movie_titles)
 
 print("Add a new movie title")
 new_movie = input(" > ")
